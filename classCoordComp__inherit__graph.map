@@ -1,0 +1,5 @@
+<map id="CoordComp" name="CoordComp">
+<area shape="rect" id="node1" title="Is the position component of a entity. We store the position x and y." alt="" coords="21,155,119,181"/>
+<area shape="rect" id="node2" href="$classBaseComponent.html" title="Class BaseComponent, inheritance of Interface IComponent. the objective is to set the GetType and Set..." alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node3" href="$classIComponent.html" title="Component Interface." alt="" coords="19,5,121,32"/>
+</map>

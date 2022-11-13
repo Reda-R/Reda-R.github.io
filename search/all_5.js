@@ -1,4 +1,24 @@
 var searchData=
 [
-  ['hitboxsystem_10',['HitBoxSystem',['../classHitBoxSystem.html',1,'']]]
+  ['game_23',['Game',['../classGraphical_1_1Game.html#adb0f11329fa72cca2d0f9deb606bb0dc',1,'Graphical::Game::Game()'],['../classGraphical_1_1Game.html',1,'Graphical::Game']]],
+  ['gameloop_24',['Gameloop',['../classGameloop.html',1,'Gameloop'],['../classGameloop.html#a893df62511d3bfc0b4d6ae4b690cfafb',1,'Gameloop::Gameloop()'],['../classGraphical_1_1Game.html#a34c8f0dee640ab1eee60b0a7c9ac6a16',1,'Graphical::Game::Gameloop()']]],
+  ['get_5fcurrent_5fdata_25',['get_current_data',['../classClient.html#ac217f1c1791ee841f57f343543828774',1,'Client']]],
+  ['getcomp_26',['GetComp',['../classEntity.html#a49b0d6bf5d239489e2c7a1213dbef528',1,'Entity']]],
+  ['getdirection_27',['GetDirection',['../classIaComp.html#a121d00b00146b5a4e8885f3616df2da0',1,'IaComp']]],
+  ['getfromtype_28',['GetFromType',['../classGraphical_1_1Entity.html#abe74e659fc8f74311c546110bdf14111',1,'Graphical::Entity']]],
+  ['getgame_29',['Getgame',['../classGraphical_1_1Sfml.html#a0a42b84fd59a76476f16c06228260b47',1,'Graphical::Sfml']]],
+  ['getheight_30',['GetHeight',['../classHitboxComp.html#ad88876025d8063d167e6511ab6fe5c7d',1,'HitboxComp']]],
+  ['gethp_31',['getHp',['../classHealthComp.html#af496e6eff5336ddd1314b1a1c6d62998',1,'HealthComp']]],
+  ['getid_32',['GetId',['../classEntity.html#a0637e29276eb7ce1755b572446ed5bf7',1,'Entity']]],
+  ['getlist_33',['GetList',['../classEntityManager.html#a124508414d382408253498386843f640',1,'EntityManager']]],
+  ['getlistcomponent_34',['GetListComponent',['../classEntity.html#a138beffe4a00e240e09a4acb6c10d68d',1,'Entity']]],
+  ['getmenu_35',['GetMenu',['../classGraphical_1_1Sfml.html#aa7395fea9a821bca79aec453a64f2d11',1,'Graphical::Sfml']]],
+  ['getpos_36',['GetPos',['../classCoordComp.html#a83fd9cef3b563ef808761b48a479f14e',1,'CoordComp']]],
+  ['getsprite_37',['GetSprite',['../classGraphical_1_1Entity.html#ad684a0935ed4c10ffbb49caf02a9cc4f',1,'Graphical::Entity']]],
+  ['gettype_38',['getType',['../classBaseComponent.html#a5923b70fa9f1582552d2b05fe4db78dc',1,'BaseComponent']]],
+  ['getwidth_39',['GetWidth',['../classHitboxComp.html#a852cf0582f67f6cc4183e3f8852dbf2a',1,'HitboxComp']]],
+  ['getwindow_40',['GetWindow',['../classGraphical_1_1Sfml.html#a77f5272af32f8ca5792fd68b5c7247d5',1,'Graphical::Sfml']]],
+  ['getx_41',['GetX',['../classCoordComp.html#af849e09acfba59407ac9b49a467cb260',1,'CoordComp']]],
+  ['gety_42',['GetY',['../classCoordComp.html#a89dd83f9561f09f94a41c966339a3c98',1,'CoordComp']]],
+  ['gravitycomp_43',['GravityComp',['../classGravityComp.html',1,'']]]
 ];

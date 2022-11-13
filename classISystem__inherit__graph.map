@@ -1,6 +1,6 @@
 <map id="ISystem" name="ISystem">
-<area shape="rect" id="node1" title=" " alt="" coords="163,5,237,32"/>
-<area shape="rect" id="node2" href="$classHitBoxSystem.html" title=" " alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node3" href="$classPlayerSystem.html" title=" " alt="" coords="144,80,256,107"/>
-<area shape="rect" id="node4" href="$structShootSystem.html" title=" " alt="" coords="281,80,389,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="131,5,205,32"/>
+<area shape="rect" id="node2" href="$classIaSystem.html" title="System of Ia." alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$classPlayerSystem.html" title=" " alt="" coords="112,80,224,107"/>
+<area shape="rect" id="node4" href="$classShootSystem.html" title="System to move Shoot Entity." alt="" coords="249,80,357,107"/>
 </map>

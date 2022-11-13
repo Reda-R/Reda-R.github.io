@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>R-TYPE PROJECT: /home/redzyx/delivery/CPP_ADVANCED/R-Type/Game_Engine/PlayerSystem/PlayerSystem.hpp Source File</title>
+<title>R-TYPE PROJECT: /home/redzyx/delivery/CPP_ADVANCED/R-Type/Game_Engine/ECS/PlayerSystem/PlayerSystem.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,6 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">R-TYPE PROJECT
    </div>
+   <div id="projectbrief">Welcome to our documentation !</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_eb928e1ca962e47a0c18b213debc2fc6.html">Game_Engine</a></li><li class="navelem"><a class="el" href="dir_820e780b216af765f4f3cfbca62ed3a6.html">PlayerSystem</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_eb928e1ca962e47a0c18b213debc2fc6.html">Game_Engine</a></li><li class="navelem"><a class="el" href="dir_17f98e257c94c8770d00793de3651748.html">ECS</a></li><li class="navelem"><a class="el" href="dir_ae920873b36b3c47bb93d2688596ed85.html">PlayerSystem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,33 +79,34 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Entity.hpp&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;EntityManager.hpp&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;ISystem.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">enum</span> Action {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    MoveUp,</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    MoveDown,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Shoot</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    PressShoot</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classPlayerSystem.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlayerSystem.html">PlayerSystem</a> : <span class="keyword">public</span> <a class="code" href="classISystem.html">ISystem</a> {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">// void run(EntitySystem entitysystem, std::map&lt;Action, int&gt; queue_action);</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classPlayerSystem.html#a147bdc3c49f00b66f9c34ba6f12d20b7">   31</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classPlayerSystem.html#a147bdc3c49f00b66f9c34ba6f12d20b7">run</a>(<a class="code" href="classEntitySystem.html">EntitySystem</a> &amp;entitysystem, <span class="keywordtype">int</span> action, <span class="keywordtype">int</span> direction);</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classPlayerSystem.html#a04756206187b2d17882d16bc89fac121">   31</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classPlayerSystem.html#a04756206187b2d17882d16bc89fac121">run</a>(<a class="code" href="classEntityManager.html">EntityManager</a> entitysystem, <span class="keywordtype">int</span> action, <span class="keywordtype">int</span> direction);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> MovePosY(<span class="keywordtype">size_t</span> <span class="keywordtype">id</span>, <a class="code" href="classEntitySystem.html">EntitySystem</a> &amp;entitysystem, <span class="keywordtype">int</span> y_pos);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> MovePosX(<span class="keywordtype">size_t</span> <span class="keywordtype">id</span>, <a class="code" href="classEntitySystem.html">EntitySystem</a> &amp;entitysystem, <span class="keywordtype">int</span> x_pos);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> Shoot(<span class="keywordtype">size_t</span> <span class="keywordtype">id</span>, <a class="code" href="classEntitySystem.html">EntitySystem</a> &amp;entitysystem);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="ttc" id="aclassEntitySystem_html"><div class="ttname"><a href="classEntitySystem.html">EntitySystem</a></div><div class="ttdef"><b>Definition:</b> Entity.hpp:65</div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> CheckAction(<a class="code" href="classEntityManager.html">EntityManager</a> entitysystem, <span class="keywordtype">int</span> action, <span class="keywordtype">int</span> direction, <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> MovePosY(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="classEntityManager.html">EntityManager</a> entitysystem, <span class="keywordtype">int</span> y_pos);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> MovePosX(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="classEntityManager.html">EntityManager</a> entitysystem, <span class="keywordtype">int</span> x_pos);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> Shoot(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="classEntityManager.html">EntityManager</a> entitysystem);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="ttc" id="aclassEntityManager_html"><div class="ttname"><a href="classEntityManager.html">EntityManager</a></div><div class="ttdef"><b>Definition:</b> EntityManager.hpp:117</div></div>
 <div class="ttc" id="aclassISystem_html"><div class="ttname"><a href="classISystem.html">ISystem</a></div><div class="ttdef"><b>Definition:</b> ISystem.hpp:10</div></div>
 <div class="ttc" id="aclassPlayerSystem_html"><div class="ttname"><a href="classPlayerSystem.html">PlayerSystem</a></div><div class="ttdef"><b>Definition:</b> PlayerSystem.hpp:20</div></div>
-<div class="ttc" id="aclassPlayerSystem_html_a147bdc3c49f00b66f9c34ba6f12d20b7"><div class="ttname"><a href="classPlayerSystem.html#a147bdc3c49f00b66f9c34ba6f12d20b7">PlayerSystem::run</a></div><div class="ttdeci">void run(EntitySystem &amp;entitysystem, int action, int direction)</div><div class="ttdoc">Checks the action and choose between move or shoot.</div></div>
+<div class="ttc" id="aclassPlayerSystem_html_a04756206187b2d17882d16bc89fac121"><div class="ttname"><a href="classPlayerSystem.html#a04756206187b2d17882d16bc89fac121">PlayerSystem::run</a></div><div class="ttdeci">void run(EntityManager entitysystem, int action, int direction)</div><div class="ttdoc">Checks the action and choose between move or shoot.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

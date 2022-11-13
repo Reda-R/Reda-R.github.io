@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>R-TYPE PROJECT: Main Page</title>
+<title>R-TYPE PROJECT: Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,6 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">R-TYPE PROJECT
    </div>
+   <div id="projectbrief">Welcome to our documentation !</div>
   </td>
  </tr>
  </tbody>
@@ -60,11 +61,154 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">R-TYPE PROJECT Documentation</div>  </div>
+<div class="title">Documentation </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md__home_redzyx_delivery_CPP_ADVANCED_R_Type_README"></a> </p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+DESCRIPTION</h1>
+<p>Welcome to our R-Type project. This is the main documentation of our project. It will be explain you all features we include and how to modify them. Then you will be able to contribuate to our project who's open-source. Enjoy the reading of our beautiful documention !</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+SUMMARY</h1>
+<ul>
+<li><code>I) Introduction</code><ul>
+<li>A | CMake …………………………………………………………………………………………… 1</li>
+<li>B | Architecture ………………………………………………………………………………….. 2</li>
+</ul>
+</li>
+<li><code>II) Packages Installed</code><ul>
+<li>A | Graphic Lib ………………………………………………………………………………….… 3</li>
+<li>B | <a class="el" href="classNetwork.html">Network</a> Lib ………………………………………………………………………………….. 4</li>
+</ul>
+</li>
+<li><code>III) Build and Launch The Project</code><ul>
+<li>A | Build ……………………………………………………………………………………….. 5</li>
+<li>B | Launch …………………………………………………………………………………. 6</li>
+</ul>
+</li>
+<li><code>IV) Documentation</code><ul>
+<li>A | RFC Protocole ……………………………………………………………………………………….. 7</li>
+<li>B | Doxygen …………………………………………………………………………………. 8</li>
+</ul>
+</li>
+</ul>
+<hr  />
+<h1><a class="anchor" id="autotoc_md4"></a>
+I. INTRODUCTION</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+CMAKE</h2>
+<ul>
+<li>WHAT IS CMAKE ? <blockquote class="doxtable">
+<p>CMake is a software development cross-platform (Linux, Windows, macOS) free and open-source.\ </p>
+</blockquote>
+Using for build automation, testing, packaging and install a lot of things such as software.\ CMake can generate a native build environnement in order to compil source code, create libraries and build executables.</li>
+</ul>
+<p><img src="/Docs/.doc_assets/cmake_logo.png" alt="" title="CMAKE Logo" class="inline"/></p>
+<hr  />
+ <h2><a class="anchor" id="autotoc_md7"></a>
+ARCHITECTURE</h2>
+<blockquote class="doxtable">
+<p>Architechture part text </p>
+</blockquote>
+<p>LAST PART TO DO (PNG OF THE ARCHI CMAKE + .CMAKE + CONANFILE.TXT)</p>
+<hr  />
+ <h1><a class="anchor" id="autotoc_md9"></a>
+II. PACKAGES INSTALLED</h1>
+<h2><a class="anchor" id="autotoc_md10"></a>
+GRAPHIC LIB</h2>
+<ul>
+<li><em>SFML LIB : WHAT IS IT ?</em></li>
+</ul>
+<blockquote class="doxtable">
+<p>SFML is a multimedia library for C++ with bindings available for other languages such as C, Python or Rust. </p>
+</blockquote>
+<p>It does not just let you use hardware-accelerated 2D Graphics with OpenGL but also has a variety of methods related to different types of media such as fonts, audio, etc. It stands for Simple and Fast Multimedia Library. Well, how simple is it ?\ So simple that you could get a snake game running in less than 15 minutes. How fast is it? It’s so fast that you’d be running the application at several thousand frames per second.\ SFML is used heavily in making games and even game engines. And even though SFML doesn’t support 3D rendering yet it is used for context creation. Since OpenGL can’t create a window, 3D graphics programmers use SFML (at least most of the time) for the task.</p>
+<p><img src="/Docs/.doc_assets/sfml_logo.png" alt="" title="SFML Logo" class="inline"/></p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md12"></a>
+NETWORK LIB</h2>
+<ul>
+<li><em>BOOST::ASIO LIB : WHAT IS IT ?</em></li>
+</ul>
+<blockquote class="doxtable">
+<p>Boost library consists of asio which is a free, cross-platform C++ library for network and low-level I/O programming that provides a consistent asynchronous model using a modern C++ approach.\ </p>
+</blockquote>
+<p>This article will help to develop a client-server synchronous chatting application using boost::asio.\ We are explicitly mentioning “synchronous” because in the synchronous model one of our client or server has to wait for another.</p>
+<p><img src="/Docs/.doc_assets/boost_logo.png" alt="" title="BOOST Logo" class="inline"/></p>
+<hr  />
+ <h1><a class="anchor" id="autotoc_md14"></a>
+III. BUILD AND LAUNCH THE PROJECT</h1>
+<h2><a class="anchor" id="autotoc_md15"></a>
+BUILD THE PROJECT</h2>
+<blockquote class="doxtable">
+<p>First make sure you have cmake, git, pip and g++ installed on your computer </p>
+</blockquote>
+<ul>
+<li>First Way :<ul>
+<li><code>On Ubuntu (Linux) :</code> ```sh mkdir build -p &amp;&amp; cd build &amp;&amp; sudo pip install conan &amp;&amp; conan install .. &ndash;build=missing -s compiler.libcxx=libstdc++11 &amp;&amp; cmake .. &amp;&amp; cmake &ndash;build . &ndash;parallel &amp;&amp; cd .. ```</li>
+<li><code>On Windows :</code> ```sh pip install conan &amp;&amp; cd build &amp;&amp; conan install .. &ndash;build=missing &amp;&amp; cmake ../ &amp;&amp; cmake &ndash;build . &ndash;parallel &amp;&amp; cd .. &amp;&amp; move .\build_deps\sfml-build\lib\Debug*.dll .\Debug\ ```</li>
+</ul>
+</li>
+<li>Second Way :<ul>
+<li><code>On Ubuntu (Linux) :</code> ```sh ./build.sh ``<code> *</code>On Windows :<code> </code>``sh ./build.bat </li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md16"></a>
+```</h2>
+<h2><a class="anchor" id="autotoc_md17"></a>
+LAUNCH OUR PROJECT</h2>
+<div class="fragment"><div class="line">./r-type_server [port]</div>
+<div class="line">./r-type_client [ip] [port]</div>
+</div><!-- fragment --><ul>
+<li><code>On Linux :</code> ```sh ./r-type_server [port] ./r-type_client [ip] [port] ```</li>
+<li><code>On Windows :</code> ```sh .\Debug\r-type_server [port] .\Debug\r-type_client [ip] [port] ```</li>
+</ul>
+<hr  />
+ <blockquote class="doxtable">
+<p>Connect the server on a computer and the client on another computer with the ip of the server machine and the port you choosed while runnning the server part. </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>port : number of the port open by the server machine. </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>ip : the ip adress of the machine where the server is running. </p>
+</blockquote>
+<p>&mdash;</p>
+<h1><a class="anchor" id="autotoc_md19"></a>
+IV. Documentation</h1>
+<h2><a class="anchor" id="autotoc_md20"></a>
+RFC PROTOCOL</h2>
+<ul>
+<li>UDP PROTOCOLE <blockquote class="doxtable">
+<p>In our R-Type project, we only used the <b>UDP</b> protocol (**U**ser **D**atagram **P**rotocol). We used the UDP protocol even if it is not reliable because UDP requires less processing at the network interface. As u can see in the image below </p>
+</blockquote>
+<b>TCP</b> (<b>T</b> ransmission **C**ontrol **P**rotocol) need a conection between the sender and the receiver while UDP only send and receive.</li>
+</ul>
+<p><img src="/Docs/.doc_assets/udp.png" alt="" title="UDP Logo" class="inline"/></p>
+<hr  />
+ <h2><a class="anchor" id="autotoc_md22"></a>
+DOXYGEN</h2>
+<ul>
+<li><em>What is doxygen ? (Documentation for developper)</em> <blockquote class="doxtable">
+<p>Doxygen is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C#, PHP, Java, Python, IDL (Corba, Microsoft, and UNO/OpenOffice flavors), Fortran, and to some extent D. Doxygen also supports the hardware description language VHDL. The Documentation can be generated with a configuration file named Doxyfile.in. \ </p>
+</blockquote>
+Also, our doc is available <b><a href="https://reda-r.github.io/">here</a></b> or at : "https://reda-r.github.io/" Feel free to use it to contribuate to our project and enjoy.</li>
+</ul>
+<p><img src="/Docs/.doc_assets/doxygen_logo.png" alt="logo-doxygen-pic" title="Doxygen Logo" class="inline"/> <img src="/Docs/.doc_assets/doxygen_overview.png" alt="overview-doxygen-pic" title="Website Doxygen Overview" class="inline"/></p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md24"></a>
+PROJECT REALISED BY</h2>
+<ul>
+<li><b><a href="https://github.com/Reda-R">Reda Ramdani</a></b></li>
+<li><b><a href="https://github.com/HaiKatsu">Ashwin Sagodira</a></b></li>
+<li><b><a href="https://github.com/eminatabey">Antoine Atabey</a></b></li>
+<li><b><a href="https://github.com/Niqckow">Nicolas Humbert</a></b></li>
+<li><b><a href="https://github.com/romain-caillait">Caillat Romain</a></b> </li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

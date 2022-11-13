@@ -23,6 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">R-TYPE PROJECT
    </div>
+   <div id="projectbrief">Welcome to our documentation !</div>
   </td>
  </tr>
  </tbody>
@@ -71,15 +72,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae1b9b68d17921212d7009ec0328ded11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameloop.html#ae1b9b68d17921212d7009ec0328ded11">Gameloop</a> (const int &amp;port, asio::io_context &amp;service)</td></tr>
-<tr class="memdesc:ae1b9b68d17921212d7009ec0328ded11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGameloop.html">Gameloop</a> object.  <a href="classGameloop.html#ae1b9b68d17921212d7009ec0328ded11">More...</a><br /></td></tr>
-<tr class="separator:ae1b9b68d17921212d7009ec0328ded11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893df62511d3bfc0b4d6ae4b690cfafb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameloop.html#a893df62511d3bfc0b4d6ae4b690cfafb">Gameloop</a> (const int &amp;port, boost::asio::io_service &amp;service, int max_entities)</td></tr>
+<tr class="memdesc:a893df62511d3bfc0b4d6ae4b690cfafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classGameloop.html">Gameloop</a> object.  <a href="classGameloop.html#a893df62511d3bfc0b4d6ae4b690cfafb">More...</a><br /></td></tr>
+<tr class="separator:a893df62511d3bfc0b4d6ae4b690cfafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0aff9533f00b23557a7d7b348b95007"><td class="memItemLeft" align="right" valign="top"><a id="ac0aff9533f00b23557a7d7b348b95007"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameloop.html#ac0aff9533f00b23557a7d7b348b95007">~Gameloop</a> ()</td></tr>
 <tr class="memdesc:ac0aff9533f00b23557a7d7b348b95007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classGameloop.html">Gameloop</a> object. <br /></td></tr>
 <tr class="separator:ac0aff9533f00b23557a7d7b348b95007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a4d43b08b93a84b19232b477d8bf6e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; dataFS &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameloop.html#a6a4d43b08b93a84b19232b477d8bf6e6">convert</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classEntity.html">Entity</a> &gt;&gt; &amp;vecT)</td></tr>
-<tr class="memdesc:a6a4d43b08b93a84b19232b477d8bf6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert a vector of entities to a vector of dataFS who is sent to client  <a href="classGameloop.html#a6a4d43b08b93a84b19232b477d8bf6e6">More...</a><br /></td></tr>
+<tr class="memitem:a6a4d43b08b93a84b19232b477d8bf6e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdataFS.html">dataFS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameloop.html#a6a4d43b08b93a84b19232b477d8bf6e6">convert</a> (const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classEntity.html">Entity</a> &gt;&gt; &amp;vecT)</td></tr>
+<tr class="memdesc:a6a4d43b08b93a84b19232b477d8bf6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert a vector of entities to a vector of <a class="el" href="structdataFS.html" title="dataFS is the data From the Server To the Client">dataFS</a> who is sent to client  <a href="classGameloop.html#a6a4d43b08b93a84b19232b477d8bf6e6">More...</a><br /></td></tr>
 <tr class="separator:a6a4d43b08b93a84b19232b477d8bf6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6a63e3c024bee8c8c5a607055462a89"><td class="memItemLeft" align="right" valign="top"><a id="af6a63e3c024bee8c8c5a607055462a89"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameloop.html#af6a63e3c024bee8c8c5a607055462a89">run</a> ()</td></tr>
@@ -87,8 +88,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:af6a63e3c024bee8c8c5a607055462a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae1b9b68d17921212d7009ec0328ded11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1b9b68d17921212d7009ec0328ded11">&#9670;&nbsp;</a></span>Gameloop()</h2>
+<a id="a893df62511d3bfc0b4d6ae4b690cfafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a893df62511d3bfc0b4d6ae4b690cfafb">&#9670;&nbsp;</a></span>Gameloop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -102,8 +103,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">asio::io_context &amp;&#160;</td>
-          <td class="paramname"><em>service</em>&#160;</td>
+          <td class="paramtype">boost::asio::io_service &amp;&#160;</td>
+          <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_entities</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -133,7 +140,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;dataFS&gt; Gameloop::convert </td>
+          <td class="memname">std::vector&lt;<a class="el" href="structdataFS.html">dataFS</a>&gt; Gameloop::convert </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classEntity.html">Entity</a> &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>vecT</em></td><td>)</td>
@@ -142,7 +149,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>convert a vector of entities to a vector of dataFS who is sent to client </p>
+<p>convert a vector of entities to a vector of <a class="el" href="structdataFS.html" title="dataFS is the data From the Server To the Client">dataFS</a> who is sent to client </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vecT</td><td></td></tr>

@@ -23,6 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">R-TYPE PROJECT
    </div>
+   <div id="projectbrief">Welcome to our documentation !</div>
   </td>
  </tr>
  </tbody>
@@ -68,12 +69,19 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classEntity.html">Entity</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#a54c51d33f241435b582b1f5ef46a121d">Entity</a>(size_t id, std::vector&lt; int &gt; pos, Type type)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classEntity.html#aa7ef4f5f05c7f3819864ebdf648d2d7b">GetId</a>() const</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#aa5119d5b2c7e8e1e9782ee2ec8949eec">GetPos</a>() const</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classEntity.html#acce5bc200491b5affd1d241f2876789e">GetType</a>() const</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#af7540b268471da281e2250debee6b093">SetPos</a>(std::vector&lt; int &gt; pos)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Entity</b>() (defined in <a class="el" href="classEntity.html">Entity</a>)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#a9ca889fe3167d566444a99a48ce2d0c8">AddComp</a>(std::shared_ptr&lt; T &gt; &amp;component)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classEntity.html#ac954e2162d0db4728d26e9c6e5d65198">CheckComp</a>(ComponentType componentType)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#a69799f6ee6dcfab7594f45e612b198d1">CheckIfHaveComp</a>()</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classEntity.html#a413b5fa48376a6ec453d42f6e06b1521">DeleteComp</a>(ComponentType componentType)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#ad2d7536fe52567740694ed52142c88c3">DeleteListComponent</a>()</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classEntity.html#ac98bd610e0299cc2aa0538fb2884ab69">Entity</a>(int id)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#a49b0d6bf5d239489e2c7a1213dbef528">GetComp</a>(ComponentType componentType)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classEntity.html#a0637e29276eb7ce1755b572446ed5bf7">GetId</a>()</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#a138beffe4a00e240e09a4acb6c10d68d">GetListComponent</a>() const</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>operator=</b>(const Entity &amp;entity) (defined in <a class="el" href="classEntity.html">Entity</a>)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classEntity.html#a82861af645266489b9410ee7f584a81d">SetId</a>(int id)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classEntity.html#a99122c376d5367573350e712484bd801">SetListComp</a>(std::vector&lt; std::shared_ptr&lt; BaseComponent &gt;&gt; list_component)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Entity</b>() (defined in <a class="el" href="classEntity.html">Entity</a>)</td><td class="entry"><a class="el" href="classEntity.html">Entity</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

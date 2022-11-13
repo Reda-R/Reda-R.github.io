@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['network_43',['Network',['../classNetwork.html#af2d46b281b5080d5b236591e3f05eb89',1,'Network::Network(asio::io_context &amp;ioService, const std::string &amp;port, const std::string &amp;ipaddr)'],['../classNetwork.html#a40a2658af297319eb652e3f0fdada0d6',1,'Network::Network(asio::io_context &amp;ioService, const int port)']]]
+  ['healthcomp_152',['HealthComp',['../classHealthComp.html#a2f2713d53cd61d7666c542f7a871a7f4',1,'HealthComp']]],
+  ['hitboxcomp_153',['HitboxComp',['../classHitboxComp.html#a8e55ff0c2a1da048af6d52eeea383d76',1,'HitboxComp']]]
 ];

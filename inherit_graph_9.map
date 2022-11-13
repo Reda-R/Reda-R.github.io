@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIComponent.html" title="Component Interface." alt="" coords="5,183,107,209"/>
+<area shape="rect" id="node2" href="$classBaseComponent.html" title="Class BaseComponent, inheritance of Interface IComponent. the objective is to set the GetType and Set..." alt="" coords="155,183,284,209"/>
+<area shape="rect" id="node3" href="$classCoordComp.html" title="Is the position component of a entity. We store the position x and y." alt="" coords="339,5,437,32"/>
+<area shape="rect" id="node4" href="$classGravityComp.html" title=" " alt="" coords="334,56,442,83"/>
+<area shape="rect" id="node5" href="$classHealthComp.html" title="Health Component, store the hp of a Entity." alt="" coords="337,107,439,133"/>
+<area shape="rect" id="node6" href="$classHitboxComp.html" title="Hitbox Component, store the height and widht of a Entity." alt="" coords="337,157,439,184"/>
+<area shape="rect" id="node7" href="$classIaComp.html" title="Ia Component. The objective is to defined if the Entity is a Ia." alt="" coords="352,208,424,235"/>
+<area shape="rect" id="node8" href="$classPlayerComp.html" title="Player Component. To know if the Entity is a Player." alt="" coords="337,259,439,285"/>
+<area shape="rect" id="node9" href="$classShootComp.html" title="Shoot Component. To know if the Entity is a Shoot." alt="" coords="339,309,437,336"/>
+<area shape="rect" id="node10" href="$classWeaponComp.html" title="Weapon Component. To know if the Entity can Shoot." alt="" coords="332,360,444,387"/>
+</map>

@@ -23,6 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">R-TYPE PROJECT
    </div>
+   <div id="projectbrief">Welcome to our documentation !</div>
   </td>
  </tr>
  </tbody>
@@ -68,33 +69,78 @@ $(function() {
 <div class="textblock">
 <p><a href="hierarchy.html">Go to the textual class hierarchy</a></p>
 </div><table border="0" cellspacing="10" cellpadding="0">
-<tr><td><img src="inherit_graph_0.png" border="0" usemap="#aEntity" alt=""/>
+<tr><td><img src="inherit_graph_0.png" border="0" usemap="#adataFC" alt=""/>
+<map name="adataFC" id="adataFC">
+<area shape="rect" href="structdataFC.html" title="dataFC is the data From Client to the Server" alt="" coords="5,5,73,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_1.png" border="0" usemap="#adataFS" alt=""/>
+<map name="adataFS" id="adataFS">
+<area shape="rect" href="structdataFS.html" title="dataFS is the data From the Server To the Client" alt="" coords="5,5,72,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_2.png" border="0" usemap="#aEntity" alt=""/>
 <map name="aEntity" id="aEntity">
 <area shape="rect" href="classEntity.html" title=" " alt="" coords="5,5,65,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" usemap="#aEntitySystem" alt=""/>
-<map name="aEntitySystem" id="aEntitySystem">
-<area shape="rect" href="classEntitySystem.html" title=" " alt="" coords="5,5,115,32"/>
+<tr><td><img src="inherit_graph_3.png" border="0" usemap="#aEntityManager" alt=""/>
+<map name="aEntityManager" id="aEntityManager">
+<area shape="rect" href="classEntityManager.html" title=" " alt="" coords="5,5,123,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" usemap="#aGameloop" alt=""/>
+<tr><td><img src="inherit_graph_4.png" border="0" usemap="#aGameloop" alt=""/>
 <map name="aGameloop" id="aGameloop">
 <area shape="rect" href="classGameloop.html" title=" " alt="" coords="5,5,95,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" usemap="#aISystem" alt=""/>
-<map name="aISystem" id="aISystem">
-<area shape="rect" href="classISystem.html" title=" " alt="" coords="5,56,80,83"/>
-<area shape="rect" href="classHitBoxSystem.html" title=" " alt="" coords="128,5,243,32"/>
-<area shape="rect" href="classPlayerSystem.html" title=" " alt="" coords="129,56,241,83"/>
-<area shape="rect" href="structShootSystem.html" title=" " alt="" coords="131,107,239,133"/>
+<tr><td><img src="inherit_graph_5.png" border="0" usemap="#aGraphical_1_1Entity" alt=""/>
+<map name="aGraphical_1_1Entity" id="aGraphical_1_1Entity">
+<area shape="rect" href="classGraphical_1_1Entity.html" title=" " alt="" coords="5,5,136,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" usemap="#aNetwork" alt=""/>
+<tr><td><img src="inherit_graph_6.png" border="0" usemap="#aGraphical_1_1Game" alt=""/>
+<map name="aGraphical_1_1Game" id="aGraphical_1_1Game">
+<area shape="rect" href="classGraphical_1_1Game.html" title=" " alt="" coords="5,5,136,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_7.png" border="0" usemap="#aGraphical_1_1Menu" alt=""/>
+<map name="aGraphical_1_1Menu" id="aGraphical_1_1Menu">
+<area shape="rect" href="classGraphical_1_1Menu.html" title=" " alt="" coords="5,5,133,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_8.png" border="0" usemap="#aGraphical_1_1Sfml" alt=""/>
+<map name="aGraphical_1_1Sfml" id="aGraphical_1_1Sfml">
+<area shape="rect" href="classGraphical_1_1Sfml.html" title=" " alt="" coords="5,5,128,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_9.png" border="0" usemap="#aIComponent" alt=""/>
+<map name="aIComponent" id="aIComponent">
+<area shape="rect" href="classIComponent.html" title="Component Interface." alt="" coords="5,183,107,209"/>
+<area shape="rect" href="classBaseComponent.html" title="Class BaseComponent, inheritance of Interface IComponent. the objective is to set the GetType and Set..." alt="" coords="155,183,284,209"/>
+<area shape="rect" href="classCoordComp.html" title="Is the position component of a entity. We store the position x and y." alt="" coords="339,5,437,32"/>
+<area shape="rect" href="classGravityComp.html" title=" " alt="" coords="334,56,442,83"/>
+<area shape="rect" href="classHealthComp.html" title="Health Component, store the hp of a Entity." alt="" coords="337,107,439,133"/>
+<area shape="rect" href="classHitboxComp.html" title="Hitbox Component, store the height and widht of a Entity." alt="" coords="337,157,439,184"/>
+<area shape="rect" href="classIaComp.html" title="Ia Component. The objective is to defined if the Entity is a Ia." alt="" coords="352,208,424,235"/>
+<area shape="rect" href="classPlayerComp.html" title="Player Component. To know if the Entity is a Player." alt="" coords="337,259,439,285"/>
+<area shape="rect" href="classShootComp.html" title="Shoot Component. To know if the Entity is a Shoot." alt="" coords="339,309,437,336"/>
+<area shape="rect" href="classWeaponComp.html" title="Weapon Component. To know if the Entity can Shoot." alt="" coords="332,360,444,387"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_10.png" border="0" usemap="#aISystem" alt=""/>
+<map name="aISystem" id="aISystem">
+<area shape="rect" href="classISystem.html" title=" " alt="" coords="5,56,80,83"/>
+<area shape="rect" href="classIaSystem.html" title="System of Ia." alt="" coords="143,5,225,32"/>
+<area shape="rect" href="classPlayerSystem.html" title=" " alt="" coords="128,56,240,83"/>
+<area shape="rect" href="classShootSystem.html" title="System to move Shoot Entity." alt="" coords="130,107,238,133"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_11.png" border="0" usemap="#aNetwork" alt=""/>
 <map name="aNetwork" id="aNetwork">
-<area shape="rect" href="classNetwork.html" title=" " alt="" coords="5,5,83,32"/>
-<area shape="rect" href="classServer.html" title=" " alt="" coords="131,5,195,32"/>
+<area shape="rect" href="classNetwork.html" title=" " alt="" coords="5,31,83,57"/>
+<area shape="rect" href="classClient.html" title=" " alt="" coords="133,5,193,32"/>
+<area shape="rect" href="classServer.html" title=" " alt="" coords="131,56,195,83"/>
 </map>
 </td></tr>
 </table>

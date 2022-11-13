@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['playersystem_31',['PlayerSystem',['../classPlayerSystem.html',1,'']]]
+  ['healthcomp_98',['HealthComp',['../classHealthComp.html',1,'']]],
+  ['hitboxcomp_99',['HitboxComp',['../classHitboxComp.html',1,'']]]
 ];
